@@ -11,16 +11,16 @@ do_not = "don't"
 y = "Those who know %s and those who %s." % (binary, do_not) # Two strings inside of a string
 
 # Print "There are 10 types of people."
-print x
+print (x)
 
 # Print "Those who know binary and those who don't."
-print y
+print (y)
 
 # Print "I said: 'There are 10 types of people.'"
-print "I said: %r." % x # One string inside of a string
+print ("I said: %r." % x) # One string inside of a string
 
 # Print "I also said: 'Those who know binary and those who don't.'."
-print "I also said: '%s'." % y # One string inside of a string
+print ("I also said: '%s'." % y) # One string inside of a string
 
 # Assign boolean False to 'hilarious'
 hilarious = False
@@ -29,7 +29,7 @@ hilarious = False
 joke_evaluation = "Isn't that joke so funny?! %r"
 
 # Print "Isn't that joke so funny? False"
-print joke_evaluation % hilarious # One string inside of a string
+print (joke_evaluation % hilarious) # One string inside of a string
 
 # Assign string to 'w'
 w = "This is the left side of..."
@@ -38,4 +38,4 @@ w = "This is the left side of..."
 e = "a string with a right side."
 
 # Print concatenation of 'w' and 'e'
-print w + e # Using + with two strings attached the second string to the end of the first string
+print (w + e) # Using + with two strings attached the second string to the end of the first string

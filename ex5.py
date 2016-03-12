@@ -8,15 +8,16 @@ eyes = 'Blue'
 teeth = 'White'
 hair = 'Brown'
 
-print "Let's talk about %r." % name
-print "He's %r inches tall (%r cm)." % (height, height_in_cm)
-print "He's %r pounds heavy (%r kg)." % (weight, weight_in_kg)
-print "Actually that's not too heavy."
-print "He's got %r eyes and %r hair." % (eyes, hair)
-print "His teeth are usually %r depending on the coffee." % teeth
+print ("Let's talk about %r." % name)
+print ("He's %r inches tall (%r cm)." % (height, height_in_cm))
+print ("He's %r pounds heavy (%r kg)." % (weight, weight_in_kg))
+print ("Actually that's not too heavy.")
+print ("He's got %r eyes and %r hair." % (eyes, hair))
+print ("He's got %s eyes and %s hair." % (eyes, hair))
+print ("His teeth are usually %r depending on the coffee." % teeth)
 
 # this line is tricky, try to get it exactly right
-print "If I add %r, %r, and %r I get %r." % (
-	age, height, weight, age + height + weight)
+print ("If I add %r, %r, and %r I get %r." % (
+	age, height, weight, age + height + weight))
 	
 # All formatting characters: %d, %i, %o, %u, %x, %X, %e, %E, %f, %F, %g, %G, %c, %r, %s
