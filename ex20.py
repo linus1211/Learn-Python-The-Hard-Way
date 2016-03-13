@@ -7,7 +7,7 @@ script, input_file = argv
 # define print_all function, which takes 1 argument (f)
 def print_all(f):
     # print the contents of f
-    print f.read()
+    print (f.read())
 
 # define the rewind function, which takes 1 argument (f)    
 def rewind(f):
@@ -17,25 +17,25 @@ def rewind(f):
 # define the print_a_line function, which takes 2 arguments (line_count, f)    
 def print_a_line(line_count, f):
     # print line_count, then a line from file f
-    print line_count, f.readline()
+    print (line_count, f.readline())
 
 # set current_file variable to a file pointer to input_file    
 current_file = open(input_file)
 
 # print string
-print "First let's print the whole file:\n"
+print ("First let's print the whole file:\n")
 
 # call print_all function with current_file as an argument
 print_all(current_file)
 
 # print string
-print "Now let's rewind, kind of like a tape."
+print ("Now let's rewind, kind of like a tape.")
 
 # call rewind function with current_file as an argument
-rewind(current_file)
+#rewind(current_file)
 
 # print string
-print "Let's print three lines:"
+print ("Let's print three lines:")
 
 # set current_line to 1
 current_line = 1
